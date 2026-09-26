@@ -6,7 +6,7 @@ Please refer to G8PP page for introduction and background information. G8PP base
 
 [Schematic](g8ppbaseline_scm.pdf) with the engineering changes applied.
 
-### List of manual connections:
+### List of engineering change connections:
 ```
 T1 to Serial connector pin 2
 T2 to Serial connector pin 3
