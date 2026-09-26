@@ -24,8 +24,8 @@ At power up the target processor is held in idle state until 255 bytes of instru
 This is normal mode of operation. At powerup, the target processor fetches program from physical location 0 which contains the bootstrap monitor. The bootstrap monitor write protect physical page 0 where bootstrap monitor resides. It then makes a copy of itself to 0xB000-0xBFFF and jump to it. Lastly the physical page 0 is replaced with logical page 0 which mapped to different physical page. This way the physical page 0 containing the bootstrap monitor is write protected and moved out of way. The application program will have unfettered access to all 64K space of the target processor.
 
 ## Design Information
-- Schematic
-- Gerber photoplots, the board was fabricated by Seeed Studio
-- Altera EPM7128S design template
+- [Schematic](g8pp_scm.pdf)
+- [Gerber photoplots](g8pp_r0.zip), the board was fabricated by Seeed Studio
+- [Altera EPM7128S design template](g8pp_epm7128_template.zip)
 - Bill of Materials
 G8PP Baseline Configuration
