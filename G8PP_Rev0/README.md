@@ -28,4 +28,11 @@ This is normal mode of operation. At powerup, the target processor fetches progr
 - [Gerber photoplots](g8pp_r0.zip), the board was fabricated by Seeed Studio
 - [Altera EPM7128S design template](g8pp_epm7128_template.zip)
 - Bill of Materials
-G8PP Baseline Configuration
+- [G8PP rev0 engineering changes](engineering_change_G8PP_R0.md)
+
+## G8PP + Processor
+- [G8PP-Z80](https://github.com/Plasmode/G8PP-Z80)
+- G8PP-6502
+- G8PP-68008
+- G8PP-8085
+- G8PP-6809
