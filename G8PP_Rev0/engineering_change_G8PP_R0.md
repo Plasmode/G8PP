@@ -1,12 +1,13 @@
-G8PP Rev0 Engineering Change
+# G8PP Rev0 Engineering Change
 Please refer to G8PP page for introduction and background information. G8PP baseline configuration is the default set of wiring connections. In rev 0 pc board, these connections are manually wired. In later version of pc board most, if not all, of the connections will be in printed circuits.
 
-![]()
+![top](g8ppbase_comp.jpg)
+![bottom](g8ppbase_solder.jpg)
 
-Schematic of baseline configuration
+[Schematic](g8ppbaseline_scm.pdf) with the engineering changes applied.
 
-List of manual connections:
-
+### List of manual connections:
+```
 T1 to Serial connector pin 2
 T2 to Serial connector pin 3
 Ground to Serial connector pin 5
@@ -26,4 +27,7 @@ T16 to RAM pin 30 (A17)
 T18 to RAM pin 1 (A18)
 T10 to RC2014 pin 23 (nMREQ)
 T9 to RC2014 pin 26 (nIORQ)
-G8PP Connectors
+```
+### G8PP Connectors
+
+![conn](g8ppbase_connector_annotated.jpg)
