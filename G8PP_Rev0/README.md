@@ -22,3 +22,10 @@ G8PP has two modes of operation as determined by the Bootstrap jumper at power u
 At power up the target processor is held in idle state until 255 bytes of instruction is uploaded to UART (115200 baud, N81, no handshake) which is then copied to memory starting from location 0x0. Afterward the CPU starts execution from 0x0.  This is the mode to load programs into the non-volatile RAM prior to booting via the RAM bootstrap mode.
 ### RAM Bootstrap
 This is normal mode of operation. At powerup, the target processor fetches program from physical location 0 which contains the bootstrap monitor. The bootstrap monitor write protect physical page 0 where bootstrap monitor resides. It then makes a copy of itself to 0xB000-0xBFFF and jump to it. Lastly the physical page 0 is replaced with logical page 0 which mapped to different physical page. This way the physical page 0 containing the bootstrap monitor is write protected and moved out of way. The application program will have unfettered access to all 64K space of the target processor.
+
+## Design Information
+- Schematic
+- Gerber photoplots, the board was fabricated by Seeed Studio
+- Altera EPM7128S design template
+- Bill of Materials
+G8PP Baseline Configuration
